@@ -1,0 +1,25 @@
+{
+  "name": "tap.js",
+  "main": "tap.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/robertleeplummerjr/tap.js",
+  "authors": [
+    "Robert Plummer <RobertLeePlummerJr@Gmail.com>"
+  ],
+  "description": "Put a \"phone tap\" on javascript element events",
+  "keywords": [
+    "event",
+    "listen"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

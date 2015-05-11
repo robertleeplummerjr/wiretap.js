@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>tap.js, put a wire tap on your js events</title>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="tap.js"></script>
+</head>
+<body>
+<button id="button-jquery">Click Me (jQuery)</button>
+<button id="button-pure">Click Me (Pure JS)</button>
+<br>
+<textarea id="listen" style="height: 400px"></textarea>
+</body>
+<script>
+	var btn$ = $('#button-jquery'),
+			btnPure = document.getElementById('button-pure'),
+			listen = document.getElementById('listen'),
+			tap = new Tap({
+				add: function() {
+					listen.value += 'added tap\n';
+				},
+				before: function() {
+					listen.value += 'before\n';
+				},
+				after: function() {
+					listen.value += 'after\n';
+				},
+				scripts: document.getElementsByTagName('script')
+			});
+
+	btn$.on('click', function () {
+		listen.value += 'event\n';
+	});
+
+	btnPure.addEventListener('click', function () {
+		listen.value += 'event\n';
+	});
+
+
+</script>
+</html>
