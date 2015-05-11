@@ -1,4 +1,4 @@
-var Wiretap = (function($) {
+var Tap = (function() {
 	"use strict";
 
 	function defaults(settings) {
@@ -45,4 +45,4 @@ var Wiretap = (function($) {
 	};
 
 	return Wiretap;
-})(jQuery);
+})();

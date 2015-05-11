@@ -1,12 +1,12 @@
 {
-  "name": "tap.js",
-  "main": "tap.js",
+  "name": "wiretap.js",
+  "main": "wiretap.js",
   "version": "0.0.0",
-  "homepage": "https://github.com/robertleeplummerjr/tap.js",
+  "homepage": "https://github.com/robertleeplummerjr/wiretap.js",
   "authors": [
     "Robert Plummer <RobertLeePlummerJr@Gmail.com>"
   ],
-  "description": "Put a \"phone tap\" on javascript element events",
+  "description": "Put a wiretap on javascript element events",
   "keywords": [
     "event",
     "listen"

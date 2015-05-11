@@ -2,9 +2,9 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>tap.js, put a wire tap on your js events</title>
+	<title>wiretap.js, put a wiretap on your js events</title>
 	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="tap.js"></script>
+	<script src="wiretap.js"></script>
 </head>
 <body>
 <button id="button-jquery">Click Me (jQuery)</button>
@@ -18,15 +18,14 @@
 			listen = document.getElementById('listen'),
 			tap = new Tap({
 				add: function() {
-					listen.value += 'added tap\n';
+					listen.value += 'added wiretap\n';
 				},
 				before: function() {
 					listen.value += 'before\n';
 				},
 				after: function() {
 					listen.value += 'after\n';
-				},
-				scripts: document.getElementsByTagName('script')
+				}
 			});
 
 	btn$.on('click', function () {
@@ -36,7 +35,5 @@
 	btnPure.addEventListener('click', function () {
 		listen.value += 'event\n';
 	});
-
-
 </script>
 </html>
