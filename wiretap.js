@@ -1,8 +1,8 @@
-var Tap = (function($) {
+var Wiretap = (function($) {
 	"use strict";
 
 	function defaults(settings) {
-		var d = Tap.defaultSettings,
+		var d = Wiretap.defaultSettings,
 			i;
 		for (i in d) if (d.hasOwnProperty(i)) {
 			settings[i] = settings[i] !== undefined ? settings[i] : d[i];
@@ -11,7 +11,7 @@ var Tap = (function($) {
 		return settings;
 	}
 
-	function Tap(settings) {
+	function Wiretap(settings) {
 		this.settings = settings = defaults(settings);
 
 		if (settings.add !== null) {
@@ -36,13 +36,13 @@ var Tap = (function($) {
 		}
 	}
 
-	Tap.prototype = {};
+	Wiretap.prototype = {};
 
-	Tap.defaultSettings = {
+	Wiretap.defaultSettings = {
 		add: null,
 		before: null,
 		after: null
 	};
 
-	return Tap;
+	return Wiretap;
 })(jQuery);
