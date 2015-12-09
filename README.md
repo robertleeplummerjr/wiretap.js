@@ -17,4 +17,4 @@ new Tap({
 	}
 });
 ```
-
+[index.html](index.html) contains a full example.
