@@ -5,7 +5,7 @@ Use before adding events using jQuery or pure javascript.
 
 Usage:
 ```javascript
-new Wiretap({
+new Tap({
 	add: function() {
 		//fire when an event is bound to element
 	},
@@ -17,4 +17,4 @@ new Wiretap({
 	}
 });
 ```
-
+[index.html](index.html) contains a full example.
