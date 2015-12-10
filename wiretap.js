@@ -1,4 +1,4 @@
-var Tap = (function() {
+var Wiretap = (function() {
 	"use strict";
 
 	function defaults(settings) {
